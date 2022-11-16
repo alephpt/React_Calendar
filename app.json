@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "timeKey",
+    "slug": "timeKey",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
