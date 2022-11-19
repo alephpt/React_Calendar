@@ -11,7 +11,7 @@ export default function App() {
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
   const [currentDayofMonth, setCurrentDay] = useState(today.getDate());
   const [currentDayofWeek, setCurrentWeekday] = useState(today.getDay());
-  const [firstDayofMonth, setFirstDayofMonth] = useState(new Date(currentYear, currentMonth, 1));
+  const [firstDayofMonth, setFirstDayofMonth] = useState(new Date(currentYear, currentMonth, 1).getDay());
   const [firstDayofYear, setFirstDayofYear] = useState(new Date(currentYear, 1, 1));
   const [leapYear, setLeapYear] = useState(Calendata.isLeapYear(currentYear));
   const [weeksInYear, setWeeksInYear] = useState((firstDayofYear == 4 && !leapYear) ? 53 : 

@@ -1,13 +1,13 @@
-import React, {useEffect} from 'react';
-import {View, Text, Image, TouchableOpacity, Pressable, Linking} from 'react-native';
+import React, { useEffect } from 'react';
+import { View, Text, Image, TouchableOpacity, Pressable, Linking } from 'react-native';
 import {
     NavigationContainer,
     DrawerActions,
     useNavigation
 } from '@react-navigation/native';
 import {createDrawerNavigator, DrawerContentScrollView, DrawerItemList} from '@react-navigation/drawer';
-import {useAppContext} from "../components/utility/appContext";
-import {TouchableHighlight} from 'react-native-gesture-handler';
+import { useAppContext } from "../components/utility/appContext";
+import { TouchableHighlight } from 'react-native-gesture-handler';
 
 import Dashboard from "../screens/Dashboard";
 import Calendar from "../screens/Calendar";
@@ -91,8 +91,8 @@ const defaultNavBar = (navigation) => {
 const ScreenRoutes = () => {
     return ({
         MENU: {
-            Home: {title: 'Home', component: Dashboard},
             Calendar: {title: 'Calendar', component: Calendar},
+            Home: {title: 'Home', component: Dashboard},
             Events: {title: 'Events', component: Events},
         },
         SCREENS: {
