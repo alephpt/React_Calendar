@@ -10,7 +10,6 @@ export default function App() {
   const [currentYear, setCurrentYear] = useState(today.getFullYear());
   const [currentMonth, setCurrentMonth] = useState(today.getMonth());
   const [currentDayofMonth, setCurrentDay] = useState(today.getDate());
-  const [currentDayofWeek, setCurrentWeekday] = useState(today.getDay());
   const [firstDayofMonth, setFirstDayofMonth] = useState(new Date(currentYear, currentMonth, 1).getDay());
   const [firstDayofYear, setFirstDayofYear] = useState(new Date(currentYear, 1, 1));
   const [leapYear, setLeapYear] = useState(Calendata.isLeapYear(currentYear));
@@ -26,10 +25,9 @@ export default function App() {
               currentYear,
               currentMonth,
               currentDayofMonth,
-              currentDayofWeek,
               firstDayofMonth,
               leapYear,
-              weeksInYear
+              weeksInYear,
         }}
         >
         <Navigator />
